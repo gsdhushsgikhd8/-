@@ -365,7 +365,7 @@
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\CORE;..\LIB\inc;..\USER;..\SYSTEM\delay;..\HARDWARE\oled;..\..\u8g2-master\u8g2-master\csrc</IncludePath>
+              <IncludePath>..\CORE;..\LIB\inc;..\USER;..\SYSTEM\delay;..\HARDWARE\oled;..\u8g2\inc</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>

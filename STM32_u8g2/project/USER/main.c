@@ -1,6 +1,7 @@
 #include "stm32f10x.h"
 #include "delay.h"
 #include "oled.h"
+#include "bmp.h"
 #include "u8x8.h"
 #include "u8g2.h"
 int t=0;
@@ -9,17 +10,22 @@ int t=0;
 	void draw(u8g2_t *u8g2);
 
 int main(void){
-	SysTick_Init(72);//���һ��Ҫ��
-	u8g2_Setup_ssd1306_128x64_noname_f(&u8g2,U8G2_R0,u8x8_byte_4wire_sw_spi,u8x8_stm32_gpio_and_delay);
+	SysTick_Init(72);//���һ��Ҫ��?
+	u8g2_Setup_ssd1306_128x64_noname_1(&u8g2,U8G2_R0,u8x8_byte_4wire_sw_spi,u8x8_stm32_gpio_and_delay);
 	u8g2_InitDisplay(&u8g2);
 	u8g2_SetPowerSave(&u8g2, 0);
 	
 while(1){
-u8g2_FirstPage(&u8g2);
+	u8g2_FirstPage(&u8g2);
     do
     {
-            draw(&u8g2);
+		draw(&u8g2);
+		
+	
     } while (u8g2_NextPage(&u8g2));
+
+
+	
 }
 }
 uint8_t u8x8_stm32_gpio_and_delay(U8X8_UNUSED u8x8_t *u8x8,U8X8_UNUSED uint8_t msg, U8X8_UNUSED uint8_t arg_int,U8X8_UNUSED void *arg_ptr)
@@ -53,21 +59,8 @@ uint8_t u8x8_stm32_gpio_and_delay(U8X8_UNUSED u8x8_t *u8x8,U8X8_UNUSED uint8_t m
 }
 void draw(u8g2_t *u8g2)
 {
-u8g2_SetFontMode(u8g2, 1);  // Transparent
+   u8g2_SetFontMode(u8g2, 1);  // Transparent
     u8g2_SetFontDirection(u8g2, 0);
-    u8g2_SetFont(u8g2, u8g2_font_inb24_mf);
-    u8g2_DrawStr(u8g2, 0, 20, "U");
-    
-    u8g2_SetFontDirection(u8g2, 1);
-    u8g2_SetFont(u8g2,  u8g2_font_inb24_mf);
-    u8g2_DrawStr(u8g2, 21,8,"8");
-        
-    u8g2_SetFontDirection(u8g2, 0);
-    u8g2_SetFont(u8g2, u8g2_font_wqy12_t_chinese1);
-   	u8g2_DrawUTF8(u8g2,10,50,"你好,world");
-    
-    u8g2_DrawHLine(u8g2, 2, 35, 47);
-    u8g2_DrawHLine(u8g2, 3, 36, 47);
-    u8g2_DrawVLine(u8g2, 45, 32, 12);
-    u8g2_DrawVLine(u8g2, 46, 33, 12);
+    u8g2_SetFont(u8g2, u8g2_font_unifont_t_chinese2);
+    u8g2_DrawUTF8(u8g2, 0, 20, "你好");
 }

@@ -1,5 +1,5 @@
 Load "..\\OBJ\\test.axf" 
-Set JLink Project File to "c:\Users\Admin\Desktop\stm32\STM32_u8g2\project\USER\JLinkSettings.ini"* JLink Info: Device "STM32F103C8" selected.
+Set JLink Project File to "c:\Users\Admin\Desktop\STM32_u8g2\project\USER\JLinkSettings.ini"* JLink Info: Device "STM32F103C8" selected.
  
 JLink info:
 ------------
@@ -27,4 +27,4 @@ Watchpoints:          4
 JTAG speed: 4000 kHz
  
 Erase Done.Programming Done.Verify OK.Application running ...
-Flash Load finished at 15:36:33
+Flash Load finished at 16:51:46

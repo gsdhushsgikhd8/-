@@ -32,8 +32,8 @@
 ..\obj\main.o: ..\HARDWARE\oled\oled.h
 ..\obj\main.o: ..\HARDWARE\oled\oledfont.h
 ..\obj\main.o: ..\HARDWARE\oled\bmp.h
-..\obj\main.o: ..\..\u8g2-master\u8g2-master\csrc\u8x8.h
+..\obj\main.o: ..\u8g2\inc\u8x8.h
 ..\obj\main.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 ..\obj\main.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 ..\obj\main.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\limits.h
-..\obj\main.o: ..\..\u8g2-master\u8g2-master\csrc\u8g2.h
+..\obj\main.o: ..\u8g2\inc\u8g2.h
