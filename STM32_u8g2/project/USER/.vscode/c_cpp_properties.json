@@ -3,16 +3,16 @@
         {
             "name": "project",
             "includePath": [
-                "c:\\Users\\Admin\\Desktop\\待移植u8g2\\project\\CORE",
-                "c:\\Users\\Admin\\Desktop\\待移植u8g2\\project\\LIB\\inc",
-                "c:\\Users\\Admin\\Desktop\\待移植u8g2\\project\\USER",
-                "c:\\Users\\Admin\\Desktop\\待移植u8g2\\project\\SYSTEM\\delay",
-                "c:\\Users\\Admin\\Desktop\\待移植u8g2\\project\\HARDWARE\\oled",
-                "c:\\Users\\Admin\\Desktop\\待移植u8g2\\u8g2-master\\u8g2-master\\csrc",
+                "c:\\Users\\Admin\\Desktop\\stm32\\STM32_u8g2\\project\\CORE",
+                "c:\\Users\\Admin\\Desktop\\stm32\\STM32_u8g2\\project\\LIB\\inc",
+                "c:\\Users\\Admin\\Desktop\\stm32\\STM32_u8g2\\project\\USER",
+                "c:\\Users\\Admin\\Desktop\\stm32\\STM32_u8g2\\project\\SYSTEM\\delay",
+                "c:\\Users\\Admin\\Desktop\\stm32\\STM32_u8g2\\project\\HARDWARE\\oled",
+                "c:\\Users\\Admin\\Desktop\\stm32\\STM32_u8g2\\u8g2-master\\u8g2-master\\csrc",
                 "E:\\Keil_v5\\ARM\\ARMCC\\include",
                 "E:\\Keil_v5\\ARM\\ARMCC\\include\\rw",
-                "c:\\Users\\Admin\\Desktop\\待移植u8g2\\project\\LIB\\src",
-                "c:\\Users\\Admin\\Desktop\\待移植u8g2\\project\\u8g2\\src"
+                "c:\\Users\\Admin\\Desktop\\stm32\\STM32_u8g2\\project\\LIB\\src",
+                "c:\\Users\\Admin\\Desktop\\stm32\\STM32_u8g2\\project\\u8g2\\src"
             ],
             "defines": [
                 "USE_STDPERIPH_DRIVER",
